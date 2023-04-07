@@ -57,6 +57,7 @@ impl State {
     }
     fn play(&mut self, ctx: &mut BTerm) {
         ctx.cls_bg(NAVY);
+
         self.frame_time += ctx.frame_time_ms;
         if self.frame_time > FRAME_DURATION {
             self.frame_time = 0.0;
@@ -176,5 +177,6 @@ fn main() -> BError {
     let context = BTermBuilder::simple80x50()
         .with_title("Flappy Dragon")
         .build()?;
+
     main_loop(context, State::new())
 }
