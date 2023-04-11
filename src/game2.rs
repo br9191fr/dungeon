@@ -77,6 +77,12 @@ mod tests {
     fn test1() {
         let i = 4;
         let j = 8;
-        assert_eq(i+j,4);
+        assert_eq!(i+j,12);
+    }
+    #[test]
+    fn test2() {
+        let i = 4;
+        let j = 8;
+        assert_eq!(i+j,14);
     }
 }
