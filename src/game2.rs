@@ -91,4 +91,10 @@ mod tests {
         let j = 8;
         assert_eq!(i+j,22);
     }
+    #[test]
+    fn test4() {
+        let i = 14;
+        let j = 14;
+        assert_eq!(i+j,28);
+    }
 }

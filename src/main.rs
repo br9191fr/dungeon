@@ -180,3 +180,37 @@ fn main() -> BError {
 
     main_loop(context, State::new())
 }
+#[cfg(test)]
+mod tests {
+
+    #[test]
+    fn test1() {
+        let i = 4;
+        let j = 8;
+        assert_eq!(i+j,12);
+    }
+    #[test]
+    fn test2() {
+        let i = 40;
+        let j = 8;
+        assert_eq!(i+j,48);
+    }
+    #[test]
+    fn test3() {
+        let i = 14;
+        let j = 8;
+        assert_eq!(i+j,22);
+    }
+    #[test]
+    fn test4() {
+        let i = 14;
+        let j = 14;
+        assert_eq!(i+j,28);
+    }
+    #[test]
+    fn test5() {
+        let i = 100;
+        let j = -1;
+        assert_eq!(i+j,99);
+    }
+}
