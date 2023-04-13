@@ -69,7 +69,7 @@ fn main() -> BError {
 
     main_loop(context, State::new())
 }
-// TODO add new tests
+
 #[cfg(test)]
 mod tests {
 
@@ -81,8 +81,14 @@ mod tests {
     }
     #[test]
     fn test2() {
-        let i = 4;
+        let i = 40;
         let j = 8;
-        assert_eq!(i+j,14);
+        assert_eq!(i+j,48);
+    }
+    #[test]
+    fn test3() {
+        let i = 14;
+        let j = 8;
+        assert_eq!(i+j,22);
     }
 }
