@@ -69,7 +69,7 @@ fn main() -> BError {
 
     main_loop(context, State::new())
 }
-
+// TODO add new tests
 #[cfg(test)]
 mod tests {
 
