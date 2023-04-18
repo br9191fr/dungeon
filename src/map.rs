@@ -48,6 +48,7 @@ impl Map {
             None
         }
     }
+    /*
     fn get_pathing_distance(&self, idx1: usize, idx2: usize) -> f32 {
         DistanceAlg::Pythagoras
             .distance2d(
@@ -55,7 +56,7 @@ impl Map {
                 self.index_to_point2d(idx2)
             )
     }
-
+    */
 }
 impl BaseMap for Map {
     fn get_available_exits(&self, idx: usize)
